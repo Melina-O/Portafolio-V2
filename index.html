@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="esp">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Mi portafolio</title>
+
+  <link rel="stylesheet" href="./style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <!--Aquí comienza la creación de la barra de navegación.-->
+    <!--Las secciones individuales del sitio web estan vinculadas a los elementos de navegación, 
+    entonces cuando el usuario hace click en cualquiera de los elementos de navegación, 
+    se le lleva a la sección que corresponde.-->
+    <nav>
+      <ul class="navegacion">
+        <h1>MELINA OLIVA</h1>
+        <li><a href="#home" class="nav-link">Acerca de Mí</a></li>
+        <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+        <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+        <a href="#contacto" class="boton">Contacto</a>
+      </ul>
+
+      <!--Menú hamburguesa que será visible solo en la versión móvil.-->
+      <button class="menu-hamburguesa" id="menu-hamburguesa">
+        <ion-icon class="barras" name="menu-outline"></ion-icon>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!--Sección Home con una pequeña introducción-->
+    <section id="home" class="home">
+      <div class="home-content">
+        <h2>¡Hola!</h2>
+        <h2>Mi nombre es Melina</h2>
+        <p>Soy desarrolladora web fullstack con experiencia en el desarrollo de aplicaciones web y móviles. Me encanta
+          transformar ideas en soluciones digitales que no solo cumplan con los objetivos del proyecto, sino que también
+          brinden una experiencia excepcional.
+          ¡Te invito a explorar mis proyectos!
+        </p>
+      </div>
+      <div class="img-box">
+        <img src="assets/images/photo.jpg" alt="Mi avatar de Dollify" loading="lazy">
+      </div>
+    </section>
+
+    <!--Sección con un poco más acerca de mí-->
+    <section class="mas-sobre">
+      <h2>Más sobre mí</h2>
+      <p>
+        Soy una apasionada desarrolladora web con experiencia en la creación de sitios y aplicaciones atractivas,
+        funcionales y centradas en el usuario. Me especializo en construir proyectos web desde cero.
+      </p>
+      <p>Ofrezco servicios de:</p>
+
+      <p>Desarrollo Frontend: Diseño interfaces responsivas y accesibles con HTML, CSS y JavaScript.</p>
+
+      <p>Desarrollo Backend: Creo APIs robustas y bases de datos eficientes.</p>
+
+      <p>WordPress: Diseño y personalización de temas y plugins.</p>
+
+      <p>Optimización: Mejoro el rendimiento y SEO de sitios web.</p>
+
+      <p>
+        Trabajo colaborativamente con diseñadores, clientes y equipos de marketing para garantizar que cada proyecto
+        cumpla con las expectativas y necesidades del usuario final.
+      </p>
+    </section>
+
+    <!--Aquí comienza la tabla con  mis conocimientos-->
+    <section id="habilidades" class="habilidades">
+      <h2>Mis Conocimientos y Hobbies</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Categoría</th>
+            <th>Lista</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Tecnologías que domino</td>
+            <td>Frontend: HTML5, CSS3, JavaScript (ES6+), React.js, Tailwind CSS.
+
+              Backend: Node.js, Express, Python (Django).<br>
+
+              Bases de datos: MongoDB, MySQL.<br>
+
+              Herramientas: Git, GitHub, Figma, Vite.</td>
+          </tr>
+          <tr>
+            <td>Tecnologías que estoy aprendiendo</td>
+            <td>TypeScript, Next.js, Firebase.
+
+              Pruebas unitarias (Jest, Vitest).
+
+              Docker y despliegue en la nube (AWS).</td>
+          </tr>
+          <tr>
+            <td>Mis Hobbies</td>
+            <td>Leer,dibujar, mirar tutoriales, hacer postres.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!--Aquí comienza la sección de mis proyectos-->
+    <section id="proyectos" class="proyectos">
+      <h2 class="titulo-de-proyectos">Algunos de mis proyectos</h2>
+      <div class="contenedor-de-proyectos">
+        <div class="contenedor-de-proyectos-tarjeta">
+          <img src="assets/images/E-commerce.png" alt="tienda de productos orgánicos" loading="lazy"
+            class="foto-de-proyecto" />
+          <h3 class="titulo-de-proyecto">E-commerce "GreenShop"</h3>
+          <p class="detalle-de-proyecto">
+            Descripción: Tienda online de productos sostenibles con carrito de compras, autenticación de usuarios y
+            pasarela de pago.
+          </p>
+          <p>Tecnologías: React, Node.js, MongoDB, Stripe API (demo).</p>
+          <a href="#" target="_blank" class="enlace-de-proyecto">¡Echale un vistazo!</a>
+        </div>
+
+        <div class="contenedor-de-proyectos-tarjeta">
+          <img src="assets/images/Task APP.png" alt="App de tareas" loading="lazy" class="foto-de-proyecto" />
+          <h3 class="titulo-de-proyecto">App de Tareas "TaskFlow"</h3>
+          <p class="detalles-de-proyecto">
+            Descripción: Aplicación para gestionar tareas con arrastrar y soltar (drag & drop), categorías y
+            recordatorios.
+          </p>
+          <p>Tecnologías: JavaScript Vanilla, LocalStorage, CSS Grid.</p>
+          <a href="#" target="_blank" class="enlace-de-proyecto">¡Echale un vistazo!</a>
+        </div>
+
+        <div class="contenedor-de-proyectos-tarjeta">
+          <img src="assets/images/BLOG.png" alt="Blog personal" loading="lazy" class="foto-de-proyecto" />
+          <h3 class="titulo-de-proyecto">Blog Personal con CMS</h3>
+          <p class="detalles-de-proyecto">
+            Descripción: Blog auto-administrable con panel de control para publicar artículos.
+          </p>
+          <p>Tecnologías: WordPress PHP, ACF (Advanced Custom Fields), SEO optimizado.</p>
+          <a href="#" target="_blank" class="enlace-de-proyecto">¡Echale un vistazo!</a>
+        </div>
+      </div>
+    </section>
+
+    <!--Aquí comienza la creación del formulario de contacto-->
+    <section id="contacto" class="Contacto">
+      <h2>Ponte en contacto conmigo</h2>
+      <!--Este es el formulario-->
+      <form action="#" method="post" class="formulario">
+        <input class="formulario-entrada" name="nombre" placeholder="Nombre" required>
+        <input class="formulario-entrada" type="text" name="apellido" placeholder="Apellido" required>
+        <input class="formulario-entrada" type="email" name="email" placeholder="Email" required>
+        <input class="formulario-entrada" type="tel" name="telefono" placeholder="Teléfono" required>
+        <input class="formulario-entrada" type="text" name="msj" placeholder="Escribe tu mensaje" required>
+        <button class="submit-btn" type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <!--Botones de redes sociales-->
+    <div class="redes">
+      <a href="#" target="_blank" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="#" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="#" target="_blank" aria-label="Twitter">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="#" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+
+  </main>
+
+  <!--Footer-->
+  <footer>
+    <p class="copy">&copy; Copyright 2025</p>
+    <p class="copy">
+      Built with &#x2661; by Melina Oliva
+    </p>
+  </footer>
+
+</body>
+
+</html>
