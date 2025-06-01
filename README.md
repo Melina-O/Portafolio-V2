@@ -38,4 +38,4 @@ Formulario de contacto funcional (estructura básica)
 Menú hamburguesa para dispositivos móviles
 
 📸 Vista previa
-<img src="assets/images/Capture - Mi portafolio - [127.0.0.1].jpg" alt="Portfolio de Melina" width="600"/>
+<img src="assets/images/captura.png" alt="Portfolio de Melina" width="600"/>
